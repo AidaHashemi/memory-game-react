@@ -27,3 +27,16 @@ button:hover {
   background: #6d5d6b;
   color: #ece6e2;
 }
+
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.front,
+.back {
+  width: 200px;
+  height: 200px;
+}
