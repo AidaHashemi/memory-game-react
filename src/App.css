@@ -1,0 +1,29 @@
+/* #ceb0b1*/
+/* #6d5d6b*/
+/* #34344d */
+/* #ece6e2 */
+.app {
+  max-width: 860px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+button {
+  background: none;
+  border: 2px solid #ece6e2;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #ece6e2;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #6d5d6b;
+  color: #ece6e2;
+}
