@@ -32,11 +32,5 @@ button:hover {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-}
-
-.front,
-.back {
-  width: 200px;
-  height: 200px;
+  gap: 15px;
 }
