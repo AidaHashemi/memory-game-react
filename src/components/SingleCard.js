@@ -10,7 +10,7 @@ const SingleCard = ({ card, handleChoice }) => {
         <img
           className="back"
           src="/img/cover.png"
-          alt="front card"
+          alt="back card"
           onClick={handleClick}
         />
       </div>

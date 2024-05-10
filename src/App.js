@@ -18,6 +18,7 @@ function App() {
   const [choiceTwo, setChoiceTwo] = useState(null);
 
   //shuffle cards
+  // every time by clicking the button(new game) we are gonna shuffle the cards.
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
@@ -28,11 +29,14 @@ function App() {
   };
 
   //handle choice
+  //if choice one has a value,it means that we have already clicked on first card so we update choice two
+  //if choice one does not have a value, it means that we should update choice one
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
   //comoare two selected cards
+  //use effect first fire when the program runs,then fire when [choiceOne, choiceTwo] change
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
