@@ -40,7 +40,6 @@ function App() {
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
-        // console.log("those cards match");
         setCards((prevCards) => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
@@ -52,7 +51,6 @@ function App() {
         });
         resetTurn();
       } else {
-        // console.log("those cards do not match");
         setTimeout(() => {
           resetTurn();
         }, 1000);
@@ -83,6 +81,7 @@ function App() {
             flipped={card === choiceOne || card === choiceTwo || card.matched}
           />
         ))}
+        {/* //flipped is true or false  */}
       </div>
     </div>
   );

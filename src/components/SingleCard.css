@@ -15,11 +15,26 @@
   height: 200px;
 }
 
+/* front of card  */
 .card .front {
   position: absolute;
   transform: rotateY(90deg);
+  transition: ease-in 0.2s;
 }
 
 .flipped .front {
   transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+/* back of card  */
+
+.card .back {
+  transition: ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
 }
