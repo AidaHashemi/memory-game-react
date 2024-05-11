@@ -14,3 +14,12 @@
   width: 200px;
   height: 200px;
 }
+
+.card .front {
+  position: absolute;
+  transform: rotateY(90deg);
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
