@@ -16,6 +16,7 @@ function App() {
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
+  const [disabled, setDisabled] = useState(false);
 
   //shuffle cards
   // every time by clicking the button(new game) we are gonna shuffle the cards.
@@ -37,8 +38,10 @@ function App() {
 
   //comoare two selected cards
   //use effect first fire when the program runs,then fire when [choiceOne, choiceTwo] change
+  //disabled is only true while we are doing this check amd for 1 second,until we turn the cards back around
   useEffect(() => {
     if (choiceOne && choiceTwo) {
+      setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
         setCards((prevCards) => {
           return prevCards.map((card) => {
@@ -65,6 +68,7 @@ function App() {
     setChoiceOne(null);
     setChoiceTwo(null);
     setTurns((prevTurns) => prevTurns + 1);
+    setDisabled(false);
   };
 
   return (
@@ -79,6 +83,7 @@ function App() {
             card={card}
             handleChoice={handleChoice}
             flipped={card === choiceOne || card === choiceTwo || card.matched}
+            disabled={disabled}
           />
         ))}
         {/* //flipped is true or false  */}

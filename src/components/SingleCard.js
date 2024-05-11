@@ -1,7 +1,10 @@
 import "./SingleCard.css";
-const SingleCard = ({ card, handleChoice, flipped }) => {
+const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
   function handleClick() {
-    handleChoice(card);
+    // only when disables is false and the card is not disabled
+    if (!disabled) {
+      handleChoice(card);
+    }
   }
   return (
     <div className="card">
