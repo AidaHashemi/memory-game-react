@@ -1,10 +1,26 @@
-/* #ceb0b1*/
-/* #6d5d6b*/
-/* #34344d */
-/* #ece6e2 */
 .app {
   max-width: 860px;
-  margin: 40px auto;
+  width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
 
 h1 {
@@ -31,6 +47,13 @@ button:hover {
 .card-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
   gap: 15px;
+}
+
+.turn_text {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  word-spacing: 5px;
 }

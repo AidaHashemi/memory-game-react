@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Magic Match</h1>
+      <h1>Let's Play 🌟</h1>
       <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">
@@ -92,7 +92,7 @@ function App() {
         ))}
         {/* //flipped is true or false  */}
       </div>
-      <p>Turns : {turns}</p>
+      <p className="turn_text">Turns : {turns}</p>
     </div>
   );
 }
