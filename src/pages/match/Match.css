@@ -75,26 +75,14 @@ button:hover {
   color: #ece6e2;
 }
 
-.card-grid {
+/* .card-grid {
   margin-top: 40px;
   display: grid;
   justify-content: center;
 
   gap: 15px;
-}
-.card-grid-easy {
-  margin-top: 40px;
-  display: grid;
-  justify-content: center;
+} */
 
-  gap: 15px;
-  grid-template-columns: repeat(4, 100px);
-}
-
-.card-grid-easy img,
-.card-grid-easy img {
-  height: 100px;
-}
 .card-grid-medium {
   margin-top: 40px;
   display: grid;
