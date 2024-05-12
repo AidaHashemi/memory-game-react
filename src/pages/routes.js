@@ -4,6 +4,7 @@ import Match from "./match/Match";
 import Easy from "./easy/Easy";
 import Medium from "./medium/Medium";
 import Hard from "./hard/Hard";
+import TicTacToe from "./ticTacToe/TicTacToe";
 
 export const routes = [
   {
@@ -13,6 +14,10 @@ export const routes = [
   {
     path: paths.MATCH,
     element: <Match />,
+  },
+  {
+    path: paths.TICTACTOE,
+    element: <TicTacToe />,
   },
   {
     path: paths.EASY,

@@ -15,6 +15,9 @@ const SideBar = () => {
           <Link to="/match" className="link">
             Match Game
           </Link>
+          <Link to="/tictac" className="link">
+            tic tac toe
+          </Link>
         </nav>
       </div>
     </div>

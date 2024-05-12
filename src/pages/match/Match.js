@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import levels from "../../data/cardData";
 import "./Match.css";
+import SideBar from "../../components/HomeDetails/SideBar/SideBar";
 
 // let cardImages = [
 //   { src: "/img/1.png", matched: false },
@@ -72,6 +73,7 @@ const Match = () => {
   }, []);
   return (
     <div className="match-container">
+      <SideBar />
       <div className="match-content">
         <h1>Let's Play 🌟</h1>
         <div className="match-routes">

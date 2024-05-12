@@ -24,6 +24,7 @@
   margin-top: 1rem;
   font-weight: bold;
   transition: 0.3s;
+  text-transform: capitalize;
 }
 
 .link:hover {
