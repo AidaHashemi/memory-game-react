@@ -14,6 +14,12 @@ const levels = {
     { src: "img/4.png", matched: false },
     { src: "img/5.png", matched: false },
     { src: "img/6.png", matched: false },
+    { src: "img/7.JPG", matched: false },
+    { src: "img/8.png", matched: false },
+    { src: "img/9.png", matched: false },
+    { src: "img/10.png", matched: false },
+    { src: "img/11.png", matched: false },
+    { src: "img/12.png", matched: false },
   ],
   hard: [
     { src: "img/1.png", matched: false },
@@ -30,6 +36,12 @@ const levels = {
     { src: "img/12.png", matched: false },
     { src: "img/13.png", matched: false },
     { src: "img/14.png", matched: false },
+    { src: "img/15.png", matched: false },
+    { src: "img/16.png", matched: false },
+    { src: "img/17.png", matched: false },
+    { src: "img/18.png", matched: false },
+    { src: "img/19.png", matched: false },
+    { src: "img/20.png", matched: false },
   ],
 };
 

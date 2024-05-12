@@ -42,6 +42,6 @@
 .level-hard {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 70px);
+  grid-template-columns: repeat(10, 70px);
   gap: 0.8rem;
 }

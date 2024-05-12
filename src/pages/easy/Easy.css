@@ -43,5 +43,5 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 100px);
-  gap: 1.5rem;
+  gap: 1rem;
 }
