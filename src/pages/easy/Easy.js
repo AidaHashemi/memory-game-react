@@ -1,29 +1,16 @@
-import SingleCard from "../../components/MemoryGame/SingleCard/SingleCard";
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import levels from "../../data/cardData";
-import "./Match.css";
+import { useState, useEffect } from "react";
+import SingleCard from "../../components/MemoryGame/SingleCard/SingleCard";
 
-// let cardImages = [
-//   { src: "/img/1.png", matched: false },
-//   { src: "/img/2.png", matched: false },
-//   { src: "/img/3.png", matched: false },
-//   { src: "/img/4.png", matched: false },
-//   { src: "/img/5.png", matched: false },
-//   { src: "/img/6.png", matched: false },
-// ];
-console.log(levels);
-const { easy, medium, hard } = levels;
-const Match = () => {
+import "../match/Match.css";
+const Easy = (props) => {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
-
-  // shuffle cards
   const shuffleCards = () => {
-    const shuffledCards = [...easy, ...easy]
+    const shuffledCards = [...levels.easy, ...levels.easy]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
     setChoiceOne(null);
@@ -74,14 +61,23 @@ const Match = () => {
     <div className="match-container">
       <div className="match-content">
         <h1>Let's Play 🌟</h1>
-        <div className="match-routes">
-          <Link to="/easy">easy</Link>
-          <Link to="/medium">medium</Link>
-          <Link to="/hard">hard</Link>
+        <button onClick={shuffleCards}>New Game</button>
+
+        <div className="card-grid-easy">
+          {cards.map((card) => (
+            <SingleCard
+              key={card.id}
+              card={card}
+              handleChoice={handleChoice}
+              flipped={card === choiceOne || card === choiceTwo || card.matched}
+              disabled={disabled}
+            />
+          ))}
         </div>
+        <p className="turn_text">Turns : {turns}</p>
       </div>
     </div>
   );
 };
 
-export default Match;
+export default Easy;

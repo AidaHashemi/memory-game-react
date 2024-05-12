@@ -9,11 +9,11 @@
   border-radius: 6px;
 }
 
-.front,
+/* .front,
 .back {
-  /* width: 120px; */
-  height: 100px;
-}
+
+  height: 70px;
+} */
 
 /* front of card  */
 .card .front {
