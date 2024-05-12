@@ -1,0 +1,24 @@
+.sidebar-container {
+  width: 20%;
+  height: 100%;
+  padding: 2rem 1rem;
+  background-color: rgb(68, 63, 58);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.menu .link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.active-link {
+  color: red !important;
+}

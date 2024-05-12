@@ -1,5 +1,6 @@
 import SingleCard from "../../components/SingleCard";
 import { useState, useEffect } from "react";
+import "./Match.css";
 
 const cardImages = [
   { src: "/img/1.png", matched: false },
@@ -74,22 +75,24 @@ const Match = () => {
     shuffleCards();
   }, []);
   return (
-    <div className="app">
-      <h1>Let's Play 🌟</h1>
-      <button onClick={shuffleCards}>New Game</button>
+    <div className="match-container">
+      <div className="match-content">
+        <h1>Let's Play 🌟</h1>
+        <button onClick={shuffleCards}>New Game</button>
 
-      <div className="card-grid">
-        {cards.map((card) => (
-          <SingleCard
-            key={card.id}
-            card={card}
-            handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched}
-            disabled={disabled}
-          />
-        ))}
+        <div className="card-grid">
+          {cards.map((card) => (
+            <SingleCard
+              key={card.id}
+              card={card}
+              handleChoice={handleChoice}
+              flipped={card === choiceOne || card === choiceTwo || card.matched}
+              disabled={disabled}
+            />
+          ))}
+        </div>
+        <p className="turn_text">Turns : {turns}</p>
       </div>
-      <p className="turn_text">Turns : {turns}</p>
     </div>
   );
 };
