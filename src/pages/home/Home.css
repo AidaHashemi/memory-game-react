@@ -1,24 +1,28 @@
-/* //TODO : it will change  */
-.glass {
-  /* From https://css.glass */
-  width: 200px;
-  height: 200px;
-  background: rgba(145, 144, 144, 0.1);
-  box-shadow: 0 0 5px 0 rgba(166, 169, 203, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
 .home-container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../../assets/images/world.jpg") no-repeat center/ cover;
   background-attachment: fixed;
+  /* background-color: #ccc; */
   display: flex;
 }
 
-.title {
-  font-size: 3rem;
+.home-content {
+  width: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-center {
+  color: rgb(224, 224, 224);
+  background: rgba(103, 100, 100, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
 }
