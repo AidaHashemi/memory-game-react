@@ -24,6 +24,7 @@ const winnerCombinations = [
 
 function checkWinner(tiles, setStrikeClass) {
   for (const { combo, strikeClass } of winnerCombinations) {
+    // i could do it(destructing) inside the function.but it is good to try different ways
     const tileValue1 = tiles[combo[0]];
     const tileValue2 = tiles[combo[1]];
     const tileValue3 = tiles[combo[2]];
