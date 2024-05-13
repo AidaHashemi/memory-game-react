@@ -1,9 +1,8 @@
-import levels from "../../data/cardData";
-// import { useState, useEffect } from "react";
-// import SingleCard from "../../components/MemoryGame/SingleCard/SingleCard";
-import DifficulatlyLevel from "../../components/DifficulatlyLevel/DifficulatlyLevel";
+import levels from "../../../../data/cardData";
+import DifficulatlyLevel from "../../../../components/MemoryGame/DifficulatlyLevel/DifficulatlyLevel";
 
 import "./Easy.css";
+
 const Easy = (props) => {
   return (
     <div className="easy-level-body">

@@ -1,13 +1,13 @@
-.hard-level-body {
+.easy-level-body {
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-  background: url("../../assets/images/bg-header.jpg") no-repeat center center /
-    cover;
+  background: url("../../../../assets/images/bg-header.jpg") no-repeat center
+    center / cover;
   background-attachment: fixed;
 }
 
-.hard-level-content {
+.easy-level-content {
   max-width: 900px;
   width: 900px;
   height: 100vh;
@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.hard-level-content::before {
+.easy-level-content::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,9 +39,9 @@
   filter: blur(5px);
 }
 
-.level-hard {
+.level-easy {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 70px);
-  gap: 0.8rem;
+  grid-template-columns: repeat(4, 100px);
+  gap: 1rem;
 }

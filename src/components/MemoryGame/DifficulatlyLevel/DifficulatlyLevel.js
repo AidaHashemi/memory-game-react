@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import SingleCard from "../MemoryGame/SingleCard/SingleCard";
+import SingleCard from "../SingleCard/SingleCard";
 
 import "./DifficulatlyLevel.css";
 

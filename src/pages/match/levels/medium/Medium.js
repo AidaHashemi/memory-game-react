@@ -1,5 +1,5 @@
-import levels from "../../data/cardData";
-import DifficulatlyLevel from "../../components/DifficulatlyLevel/DifficulatlyLevel";
+import levels from "../../../../data/cardData";
+import DifficulatlyLevel from "../../../../components/MemoryGame/DifficulatlyLevel/DifficulatlyLevel";
 
 import "./Medium.css";
 const Easy = (props) => {

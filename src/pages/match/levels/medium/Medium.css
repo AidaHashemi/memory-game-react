@@ -1,13 +1,13 @@
-.easy-level-body {
+.medium-level-body {
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-  background: url("../../assets/images/bg-header.jpg") no-repeat center center /
-    cover;
+  background: url("../../../../assets/images/bg-header.jpg") no-repeat center
+    center / cover;
   background-attachment: fixed;
 }
 
-.easy-level-content {
+.medium-level-content {
   max-width: 900px;
   width: 900px;
   height: 100vh;
@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.easy-level-content::before {
+.medium-level-content::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,9 +39,9 @@
   filter: blur(5px);
 }
 
-.level-easy {
+.level-medium {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 1rem;
+  grid-template-columns: repeat(6, 80px);
+  gap: 1.2rem;
 }
