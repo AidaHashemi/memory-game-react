@@ -57,3 +57,13 @@
 .bottom-border {
   border-bottom: 4px solid #cc90d1;
 }
+
+.x-hover:hover::after {
+  content: "X";
+  opacity: 0.4;
+}
+
+.o-hover:hover::after {
+  content: "O";
+  opacity: 0.4;
+}

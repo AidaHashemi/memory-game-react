@@ -10,6 +10,11 @@ const TicTacToe = () => {
   const [player, setPlayer] = useState(playerX);
 
   const handleTileClick = (index) => {
+    // if there is a value there do not allow any value to be added again
+    if (tiles[index] !== null) {
+      return;
+    }
+
     const newTiles = [...tiles];
     newTiles[index] = player;
     setTiles(newTiles);
@@ -23,7 +28,11 @@ const TicTacToe = () => {
     <div className="tic-tac-to-container">
       <div className="tic-tac-toe-content">
         <h2>tic tac to</h2>
-        <Board tiles={tiles} onTileClick={handleTileClick} />
+        <Board
+          tiles={tiles}
+          onTileClick={handleTileClick}
+          playerTurn={player}
+        />
       </div>
     </div>
   );
