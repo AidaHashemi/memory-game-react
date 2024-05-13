@@ -9,8 +9,15 @@ const TicTacToe = () => {
   const [tiles, setTiles] = useState(Array(9).fill(null));
   const [player, setPlayer] = useState(playerX);
 
-  const handleTileClick = (i) => {
-    console.log(i);
+  const handleTileClick = (index) => {
+    const newTiles = [...tiles];
+    newTiles[index] = player;
+    setTiles(newTiles);
+    if (player === playerX) {
+      setPlayer(playerO);
+    } else {
+      setPlayer(playerX);
+    }
   };
   return (
     <div className="tic-tac-to-container">
